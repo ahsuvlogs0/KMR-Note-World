@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> SO   GUYS   MATH   AMD   HISTORY   NOTES   ARE   NOT   AVAILABLE   YET   THEY   ARE   UNDER   PHOTOSHOOT   PROCESS   BUT   DONT   WORRY   WE   WILL   GIVE   AN   UPDATE   AFTER   SOMETIME   AND   THEN   MAKE   THEM   AVAILABLE  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KMR Note World</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #1e2a47;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: 700;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .subject-list {
+            width: 30%;
+        }
+
+        .subject-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .subject-list ul li {
+            padding: 15px;
+            margin: 10px 0;
+            background-color: #3e5c76;
+            color: white;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 8px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        .subject-list ul li:hover {
+            background-color: #1e2a47;
+        }
+
+        .chapter-list {
+            width: 65%;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: none;
+        }
+
+        .chapter-list h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .chapter-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .chapter-list ul li {
+            padding: 10px;
+            margin: 5px 0;
+            background-color: #ddd;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        .chapter-list ul li:hover {
+            background-color: #3e5c76;
+            color: white;
+        }
+
+        /* Show chapter list when clicked on subject */
+        .chapter-list.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>KMR Note World</h1>
+    </header>
+
+    <div class="container">
+        <div class="subject-list">
+            <h2>Subjects</h2>
+            <ul>
+                <li onclick="toggleChapters('biology')">Biology</li>
+                <li onclick="toggleChapters('physics')">Physics</li>
+                <li onclick="toggleChapters('chemistry')">Chemistry</li>
+                <li onclick="toggleChapters('english')">English</li>
+                <li onclick="toggleChapters('civics')">Civics</li>
+                <li onclick="toggleChapters('geography')">Geography</li>
+                <li onclick="toggleChapters('economics')">Economics</li>
+                <li onclick="toggleChapters('math')">Math</li>
+            </ul>
+        </div>
+
+        <div class="chapter-list" id="biology">
+            <h2>Biology Chapters</h2>
+            <ul>
+                <li><a href="https://drive.google.com/file/d/1zsMw_q_D5D5feG74PV1aCKpCZgQJUQRm/view?usp=drivesdk" target="_blank">Life Process</a></li>
+                <li><a href="https://drive.google.com/file/d/1z4C8ffATjoPkepAtteoG3jFGde6POMhw/view?usp=drivesdk" target="_blank">Control and Coordination</a></li>
+                <li><a href="https://drive.google.com/file/d/1zEAq7DdOM-FRrbnMze4Qe62nhSPy7aet/view?usp=drivesdk" target="_blank">How do Organisms Reproduce</a></li>
+                <li><a href="https://drive.google.com/file/d/1zFLIE38m7_OR2WKm6YvAGozETkschPze/view?usp=drivesdk" target="_blank">Genetics and Heredity</a></li>
+                <li><a href="https://drive.google.com/file/d/1z0tFiy_anydUy215zo4kjtIORHtXOX3L/view?usp=drivesdk" target="_blank">Our Environment</a></li>
+                <li><a href="https://drive.google.com/file/d/1zqKoIHcB5Uz_jV9Xl-JzrEkiNplcn2I-/view?usp=drivesdk" target="_blank">Management of Natural Resources</a></li>
+            </ul>
+        </div>
+
+        <div class="chapter-list" id="physics">
+            <h2>Physics Chapters</h2>
+            <ul>
+                <li><a href="https://drive.google.com/file/d/1xkZlyXmpAwKn0rLT77TABvCTNFTgJJmN/view?usp=drivesdk" target="_blank">Light Reflection and Refraction</a></li>
+                <li><a href="https://drive.google.com/file/d/1xOEALvpb0El4GJtjoNCN-Guhf-XoIIXW/view?usp=drivesdk" target="_blank">The Human Eye and the Colourful World</a></li>
+                <li><a href="https://drive.google.com/file/d/1xZR3Paba9d3JKdbLbwHJ77JcR8yPIgmc/view?usp=drivesdk" target="_blank">Electricity</a></li>
+                <li><a href="https://drive.google.com/file/d/1xSeOKIpRxQsMwWOSANU7_SBMmdGkZ0r7/view?usp=drivesdk" target="_blank">Magnetic Effect of Current</a></li>
+                <li><a href="https://drive.google.com/file/d/1xqOlWQc0B2Kcb3qizH1HDRX_W2DNDiW/view?usp=drivesdk" target="_blank">Sources of Energy</a></li>
+            </ul>
+        </div>
+
+        <div class="chapter-list" id="chemistry">
+            <h2>Chemistry Chapters</h2>
+            <ul>
+                <li><a href="https://drive.google.com/file/d/1y4yAuBph4gUMkYTDlxtLC7kHWQO3wsaW/view?usp=drivesdk" target="_blank">Chemical Reactions and Equations</a></li>
+                <li><a href="https://drive.google.com/file/d/1yRs9omg_y95j1lzbv6Xo2W0UjbzVD9lS/view?usp=drivesdk" target="_blank">Periodic Classification of Elements</a></li>
+                <li><a href="https://drive.google.com/file/d/1yonXUWJXdB3rffyBoL0-H2gOzQK5rHGN/view?usp=drivesdk" target="_blank">Carbon and its Compounds</a></li>
+                <li><a href="https://drive.google.com/file/d/1yC2305LF8dd_SuUW8W3Z_cbyICGbwHt3/view?usp=drivesdk" target="_blank">Metals and Non-metals</a></li>
+                <li><a href="https://drive.google.com/file/d/1yBoqRa1kPOJASkcyWccYzxkrxpvu2f_W/view?usp=drivesdk" target="_blank">Acids, Bases, and Salts</a></li>
+            </ul>
+        </div>
+
+        <div class="chapter-list" id="english">
+            <h2>English Chapters</h2>
+            <ul>
+                <li><a href="https://drive.google.com/file/d/1wgrq_z8-u0jbNTeEhoFNgplaEWN1_YuW/view?usp=drivesdk" target="_blank">Footprints Without Feet</a></li>
+                <li><a href="https://drive.google.com/file/d/1wnH01lW4OMSPgpqx4yNYISnrHHqL1YTf/view?usp=drivesdk" target="_blank">An Excellent Father</a></li>
+                <li><a href="https://drive.google.com/file/d/1wMeYNR7WaI3mW1gh3A4tOlgZOhwxgYBq/view?usp=drivesdk" target="_blank">The Last Leaf</a></li>
+                <li><a href="https://drive.google.com/file/d/1wIj-uXcKbDTQX3y0lxxPz12udn2Mwfoz/view?usp=drivesdk" target="_blank">The Proposal</a></li>
+                <li><a href="https://drive.google.com/file/d/1vZpnVB5sYErjivpj9xcSPJAxQE7Whfna/view?usp=drivesdk" target="_blank">Abhiley</a></li>
+                <li><a href="https://drive.google.com/file/d/1wKxvmR58a8sMxrcYGEeYr5H82nQWlt7L/view?usp=drivesdk" target="_blank">An Evening Wet Of Rain</a></li>
+                <li><a href="https://drive.google.com/file/d/1vjYufUPA-CJULVDDSo8EfO9WxakZlUYI/view?usp=drivesdk" target="_blank">Bholi</a></li>
+                <li><a href="https://drive.google.com/file/d/1vUAmgODgacyW86Ts-SsvxQ0dk2dp7Ouy/view?usp=drivesdk" target="_blank">Dusk</a></li>
+                <li><a href="https://drive.google.com/file/d/1x-qOlWQc0B2Kcb3qizH1HDRX_W2DNDiW/view?usp=drivesdk" target="_blank">From The Diary Of A Young Girl</a></li>
+                <li><a href="https://drive.google.com/file/d/1xBxe7pr9Ze-HvMWUhtD1B2Xr-_TFS-FI/view?usp=drivesdk" target="_blank">Last Lesson Of Afternoon</a></li>
+                <li><a href="https://drive.google.com/file/d/1vsT-51e44X6f9jyrPRh-qXeIUMjGYVHA/view?usp=drivesdk" target="_blank">Miracles</a></li>
+                <li><a href="https://drive.google.com/file/d/1wN67ZK-OovguRwloOyr_7BhA7bIbnSzt/view?usp=drivesdk" target="_blank">My Mother At Sixty Six</a></li>
+                <li><a href="https://drive.google.com/file/d/1xPN6NpOUDtOcot-b9JKxhRAGXSh8275f/view?usp=drivesdk" target="_blank">Papachi,s Moth</a></li>
+                <li><a href="https://drive.google.com/file/d/1vqSNMnY8T_Qopbj8eUeIoqqFxvOBpMtO/view?usp=drivesdk" target="_blank">Prayer</a></li>
+                <li><a href="https://drive.google.com/file/d/1wKxsN5WCZVebkQsZorb9hNIj6olZF3Pr/view?usp=drivesdk" target="_blank">Snowdrop</a></li>
+                <li><a href="https://drive.google.com/file/d/1xIBqQDOkBKKM36rDUtqREh5NMXEdr00V/view?usp=drivesdk" target="_blank">The Merchant Of Venice</a></li>
+                <li><a href="https://drive.google.com/file/d/1vNmleykxw624G3c18iUWVr0y4b4kCF_u/view?usp=drivesdk" target="_blank">The Necklace</a></li>
+                <li><a href="https://drive.google.com/file/d/1vdRRMc4jukeZlemnua2wenOsESkaJssf/view?usp=drivesdk" target="_blank">The Proposal</a></li>
+                <li><a href="https://drive.google.com/file/d/1xFVzK3R8wFZZi12Km41EQnkxR2PXtYW4/view?usp=drivesdk" target="_blank">The sermon At Banaras</a></li>
+                <li><a href="https://drive.google.com/file/d/1vOEfMEgi7IclBDkeuFCC2yrLtwGrpezp/view?usp=drivesdk" target="_blank">The Servant</a></li>
+                <li><a href="https://drive.google.com/file/d/1wWPzhahs2c6IWGJkfrjMCX-GrPT75v8M/view?usp=drivesdk" target="_blank">The Tale Of Custard The Dragon</a></li>
+                <li><a href="https://drive.google.com/file/d/1w4w6hbhGM7DMiwYpNz0KfnPfdZXHWL8b/view?usp=drivesdk" target="_blank">When you Are Old</a></li>          
+            </ul>
+        </div>
+
+        <div class="chapter-list" id="civics">
+            <h2>Civics Chapters</h2>
+            <ul>
+                <li><a href="https://drive.google.com/file/d/1x92OPiGiTVzJ-V35bwVR3MOzYw4x5Riz/view?usp=drivesdk" target="_blank">Power Sharing</a></li>
+                <li><a href="https://drive.google.com/file/d/1x67rDhncLUq4klI_XYMnVmExW2WGR2E9/view?usp=drivesdk" target="_blank">Federalism</a></li>
+                <li><a href="https://drive.google.com/file/d/1xy3k9-LF9yVAHChTYg3PA_O0L3yNsL7p/view?usp=drivesdk" target="_blank">Democracy and Diversity</a></li>
+                <li><a href="https://drive.google.com/file/d/1x-BzUqDHLrEfwq1h71w2UB-XykOKi5tw/view?usp=drivesdk" target="_blank">Gender, Religion, and Caste</a></li>
+            </ul>
+        </div>
+
+        <div class="chapter-list" id="geography">
+            <h2>Geography Chapters</h2>
+            <ul>
+                <li><a href="https://drive.google.com/file/d/1wa9Qn_x0c2x2yxzJ3g4a77_-9t1x9biq/view?usp=drivesdk" target="_blank">Resources and Development</a></li>
+                <li><a href="https://drive.google.com/file/d/1wpgQltmZZhO1e4j0jRI60QptsbMkbQwv/view?usp=drivesdk" target="_blank">Forest and Wildlife Resources</a></li>
+                <li><a href="https://drive.google.com/file/d/1w3wXXvON2kcO38nCw6R1GgVwmIIxqF83/view?usp=drivesdk" target="_blank">Water Resources</a></li>
+            </ul>
+        </div>
+
+        <div class="chapter-list" id="economics">
+            <h2>Economics Chapters</h2>
+            <ul>
+                <li><a href="https://drive.google.com/file/d/1w7W6g49V9vF8v1je3cn12g9ogf0uH1vv/view?usp=drivesdk" target="_blank">The Story of Village Palampur</a></li>
+                <li><a href="https://drive.google.com/file/d/1w4FxXX90p8g9vcH2lT3zxa-KlcOAGABJ/view?usp=drivesdk" target="_blank">People as Resource</a></li>
+            </ul>
+        </div>
+
+        <div class="chapter-list" id="math">
+            <h2>Math Chapters</h2>
+            <ul>
+                <li><a href="https://drive.google.com/file/d/1wF1zYgh9fuK3WYrQxChEdeWmk2mFzt09/view?usp=drivesdk" target="_blank">Number System</a></li>
+                <li><a href="https://drive.google.com/file/d/1wH_JpzI1-m8HrDiS1KLzVZYYbcEjY_GZ/view?usp=drivesdk" target="_blank">Polynomials</a></li>
+                <li><a href="https://drive.google.com/file/d/1wQ_pZuCgfJlO5ah5Xdrmf5exi7GVvHgG/view?usp=drivesdk" target="_blank">Linear Equations in Two Variables</a></li>
+                <li><a href="https://drive.google.com/file/d/1waB3Fpdn3QZGJ7-XE0R_H7pUt8fApkdz/view?usp=drivesdk" target="_blank">Triangles</a></li>
+                <li><a href="https://drive.google.com/file/d/1w3gS7x2lPS2MI7XgAPbff1fksgkC6hhL/view?usp=drivesdk" target="_blank">Statistics</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <script>
+        // Function to toggle the visibility of chapters for each subject
+        function toggleChapters(subject) {
+            // Hide all chapter lists
+            const allChapters = document.querySelectorAll('.chapter-list');
+            allChapters.forEach(chapter => chapter.classList.remove('active'));
+
+            // Show the clicked subject's chapter list
+            const subjectChapters = document.getElementById(subject);
+            subjectChapters.classList.add('active');
+        }
+    </script>
+</body>
+</html>
